@@ -13,9 +13,27 @@
     
       <div id="topbar">
 
-        <button id="menu"></button> <a href="register.html"><button id="register">sign up</button></a>  
-    
+        <div id="sidebar">
+          
+          <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul>
+            <li><a href="index.html">- Home</a></li>
+            <li><a href="info.html">- About</a></li>
+            <li><a href="#">- Contact</a></li>
+            <li><a href="settings.html">- settings</a></li>
+          </ul>
+        </div>
+        
+        <a href="register.html"><button id="register">sign up</button></a>  
+        
       </div>
+
+        
 
       
       <div aria-hidden="true">
@@ -28,19 +46,14 @@
       <div id="container1">
 
         <form action="" id="searchBar">
-            <input type="text" id="search" placeholder="Search in my website...">
+            <input type="text" id="search" placeholder="Search anything...">
 
             <button type="submit" id="searchButton"><img src="images/search-icon2.png" alt=""></button>
         </form>
 
       </div>
 
-      <div id="info_link">
-       
-        
-        <li id="info"><a id="a1" href="info.html">About My site</a></li>
-       
-      </div>
+      
 
    
   </body>
