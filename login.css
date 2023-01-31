@@ -8,7 +8,7 @@ body{
     width: 15%;
     border-radius: 10px;
     text-align: center;
-    height: 250px;
+    height: 280px;
     margin-left: 40%;
     margin-top: 15%;
     font-family: Arial;
@@ -19,6 +19,19 @@ body{
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
+  input{
+    font-size: larger;
+    outline: none;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+    font-family: monospace;
+    padding: 5px 5px;
+  }
+
+  label{
+    font-size: larger;
+  }
   #log_in{
     font-family: system-ui;
     margin-top: 5px;
@@ -48,8 +61,11 @@ body{
       color: #0099ff;
       font-family: cursive;
       background-color: white;
-      border-radius: 5px;
-      border-width: 1px;
+      border-radius: 7px;
+      outline: 0.5px solid black;
+      padding: 3px;
+      width: 70px;
+      margin-top: 20px;
       
   }
 
