@@ -38,6 +38,8 @@ body{
         font-size: x-large;
         font-family: monospace;
         line-height: 90px;
+        letter-spacing: 1.5px;
+        margin-left: 15px;
 
 }
 
@@ -154,6 +156,8 @@ h2{
         padding: 8px 10px;
 
 }
+
+
 
 .container1 button {
         

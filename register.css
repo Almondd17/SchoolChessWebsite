@@ -4,20 +4,40 @@ body{
 }
 
 #register_form{
-  background: azure;
-  width: 15%;
-  border-radius: 10px;
-  text-align: center;
-  height: 300px;
-  margin-left: 40%;
-  margin-top: 15%;
-  font-family: Arial;
+    background: azure;
+    width: 20%;
+    border-radius: 10px;
+    text-align: center;
+    height: 500px;
+    margin-left: 40%;
+    margin-top: 10%;
+    font-family: Verdana;
+    
   
 }
 
 h1{
   border-bottom: 1px solid silver;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input{
+  width: 70%;
+  font-size: large;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  outline: none;
+  line-height: 30px;
+  font-family: monospace;
+  margin: 10px 10px;
+}
+
+label{
+  font-family: Verdana;
+  font-weight: 500;
+  
+
 }
 
 #log_in{
@@ -46,12 +66,14 @@ h1{
 }
 
 #submit{
-    margin-top: 10px;
+    margin-top: 30px;
     color: #0099ff;
     font-family: cursive;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     border-width: 1px;
+    border: 1px solid black;
+    width: 20%;
     
 }
 
