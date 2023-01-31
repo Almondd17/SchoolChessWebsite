@@ -30,7 +30,7 @@ input{
   outline: none;
   line-height: 30px;
   font-family: monospace;
-  margin: 10px 10px;
+  margin: 10px;
 }
 
 label{
@@ -39,6 +39,12 @@ label{
   
 
 }
+
+.error{
+  color: red;
+}
+
+
 
 #log_in{
   font-family: system-ui;
