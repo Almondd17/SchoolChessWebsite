@@ -58,6 +58,17 @@ body{
         cursor: pointer;
 }
 
+#contact-info{
+        color: white;
+        display: none;
+        margin-top: 40%;
+        font-family: Arial;
+        text-align: center;
+        font-weight: lighter;
+        
+}
+
+
 .toggle-btn span{
 
         width: 35px;

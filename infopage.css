@@ -11,7 +11,7 @@ h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    -webkit-text-stroke: 2px #329d59;
+    text-shadow: 1px 1px 4px black;
     font-weight: 900;
     font-style: oblique;
     text-transform: uppercase;
