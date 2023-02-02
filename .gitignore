@@ -1,0 +1,17 @@
+node_modules/
+dist/
+*.log
+*.DS_Store
+.idea/
+
+# local environment files
+.env.local
+.env.*.local
+
+# production environment files
+.env.production.local
+.env.prod.local
+
+#ignore minified files
+*.min.js
+*.min.css
