@@ -68,6 +68,16 @@ body{
 
 
 }
+#contact-info{
+        color: white;
+        font-weight: bold;
+        font-family: Arial;
+        letter-spacing: 1px;
+        display: none;
+        font-size: smaller;
+        margin-top: 35%;
+        text-align: center;
+}
 
 #register:hover {
         cursor: pointer;
