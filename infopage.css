@@ -1,7 +1,5 @@
-html{
-    background-image: url(mywebsite\images\blue-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+body{
+    background: linear-gradient(90deg, rgb(0, 255, 119), rgb(0, 255, 225),rgb(0, 119, 255));
 }
 
 
@@ -9,33 +7,75 @@ html{
 h1 {
     color:white;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Trebuchet MS';
     font-size: 40px;
     text-shadow: 1px 1px 4px black;
     font-weight: 900;
-    font-style: oblique;
     text-transform: uppercase;
-    text-shadow: 0 0 20px #329d59;
+
+    
     
 }
 h1:hover{
     cursor: default;
 }
 
+#homebtn{
+    width: 70px;
+    height: 40px;
+    border: none;
+    margin: 10px;
+    background-image: url(images/bluenabula.jpg);
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 5px 0px 0px lightblue;
 
-#a-home{
-    font-size: xx-large;
-    font-family: Arial;
-    margin-left: 10px;
-    float: left;
-    text-decoration: #329d59 underline;
-    color: black;
-    transition:all ease 0.2s;
-    
 }
-#a-home:active{
+
+#homebtn:active{
     cursor: progress;
+    transform: translateY(3px);
+    box-shadow: 0px 3px 0px 0px rgb(180, 184, 185);
 }
+
+.web-content p{
+    text-align: center;
+    font-size: x-large;
+    font-family: Arial;
+    font-weight: bold;
+    background: linear-gradient(43deg, #3959f5, #fb63f1 46%, #FFCC70 100%);
+    -webkit-text-stroke: black 0.4px;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 10px;
+    line-height: 200%;
+
+}
+.web-content a{
+    color: blueviolet;
+}
+
+.library-nav{
+  text-align: center;
+  
+
+}
+.library-nav button{
+  padding: 10px 10px;
+  font-size: x-large; 
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(170, 243, 245);
+  font-family: cursive;
+}
+.library-nav button:active{
+    transform: translateY(2px);
+    box-shadow: 1px 1px 1px rgb(103, 102, 102);
+}
+
 
 @keyframes h1border {
     0% {border: 0%;}
