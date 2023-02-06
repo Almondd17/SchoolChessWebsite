@@ -6,6 +6,8 @@
              integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
              crossorigin="anonymous">
 
+        <link rel="stylesheet" href="library.css">
+
     </head>
 
     <body>
@@ -20,40 +22,32 @@
         crossorigin="anonymous"></script>
 
 
-
-       
-
-        <div id="board2" style="width: 400px"></div>
-        <button id="startBtn">Start Position</button>
-        <button id="clearBtn">Clear Board</button>
-
-        <script>
-
+        <div id="title">
+            <h1>1v1 Chess</h1>
+            <h2>you are welcome to look for any chess position you want!</h2>
+        </div>
+        
+        
+        
         
 
 
-           var board2 = Chessboard('board2', {
-            draggable: true,
-            dropOffBoard: 'trash',
-            sparePieces: true,
-            pieceTheme: 'images/chess-pieces/{piece}.png'
-            })
 
-            $('#startBtn').on('click', board2.start)
-            $('#clearBtn').on('click', board2.clear)
+           <div>
+
+                    <div id="myBoard1" style="width: 30%"></div>
+                
+
+            </div>
 
 
+
+               
             
-        </script>
+           
 
-        
-
-
-
-
-
-
-
+        <script src="library.js"></script>
+    
         
     </body>
 </html>
