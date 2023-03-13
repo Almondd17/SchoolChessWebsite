@@ -26,7 +26,7 @@ h1:hover{
     border: none;
     margin: 10px;
     background-image: url(images/bluenabula.jpg);
-    color: aliceblue;
+    color: rgb(186, 223, 255);
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
@@ -65,11 +65,12 @@ h1:hover{
 .play-nav button{
   padding: 10px 10px;
   font-size: x-large; 
-  border-radius: 10px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   background-color: rgb(170, 243, 245);
   font-family: cursive;
+  margin-left: 10px;
 }
 .play-nav button:active{
     transform: translateY(2px);
@@ -77,10 +78,40 @@ h1:hover{
 }
 
 
-@keyframes h1border {
-    0% {border: 0%;}
-    25% {border: 20%;}
-    50% {border: 40%;}
-    75% {border: 70%;}
-    100% {border: 100%;}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.opening {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 300px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.opening img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.opening h3 {
+    font-size: 20px;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+.opening p {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.title h2 {
+    font-family: Cambria;
+    text-align: center;
 }
