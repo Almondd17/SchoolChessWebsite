@@ -1,84 +1,48 @@
-
-var board = null
-var game = new Chess()
-var status = ('status')
-var fen = ('fen')
-var pgn = ('pgn')
-
-function onDragStart (source, piece, position, orientation) {
-  // do not pick up pieces if the game is over
-  if (game.game_over()) return false
-
-  // only pick up pieces for the side to move
-  if ((game.turn() === 'w' && piece.search(b) !== -1) ||
-      (game.turn() === 'b' && piece.search(w) !== -1)) {
-    return false
-  }
-}
-
-function onDrop (source, target) {
-  // see if the move is legal
-  var move = game.move({
-    from: source,
-    to: target,
-    promotion: 'q' // NOTE: always promote to a queen for example simplicity
-  })
-
-  // illegal move
-  if (move === null) return 'snapback'
-  updateStatus()
-}
-
-// update the board position after the piece snap
-// for castling, en passant, pawn promotion
-function onSnapEnd () {
-  board.position(game.fen())
-}
-
-function updateStatus () {
-  var status = ''
-
-  var moveColor = 'White'
-  if (game.turn() === 'b') {
-    moveColor = 'Black'
-  }
-
-  // checkmate?
-  if (game.in_checkmate()) {
-    status = 'Game over, ' + moveColor + ' got checkmated.'
-  }
-
-  // draw?
-  else if (game.in_draw()) {
-    status = 'Game over, drawn position'
-  }
-
-  // game still on
-  else {
-    status = moveColor + ' to move'
-
-    // check?
-    if (game.in_check()) {
-      status += ', ' + moveColor + 's king is in danger...'
-    }
-  }
-
-  $status.html(status)
-  $fen.html(game.fen())
-  $pgn.html(game.pgn())
-}
-
-var config = {
+var board = Chessboard('board', {
   draggable: true,
-  position: 'start',
-  onDragStart: onDragStart,
-  onDrop: onDrop,
-  onSnapEnd: onSnapEnd
+  dropOffBoard: 'trash',
+  sparePieces: true,
+  pieceTheme: 'images/chess-pieces/{piece}.png'
+});
+
+var game = new Chess();
+var legalMoves = game.moves({ verbose: true }).map(function(move) {
+  return Chessboard.objToFen(move.from) + '-' + Chessboard.objToFen(move.to);
+});
+
+function onDragStart(source, piece, position, orientation) {
+  // only allow piece movement if it's a legal move
+  if (legalMoves.indexOf(source + '-' + position) === -1) {
+      return false;
+  }
 }
-board = Chessboard('myBoard', config)
 
-updateStatus()
+function onDrop(source, target, piece, newPos, oldPos, orientation) {
+  // only make the move if it's a legal move
+  var move = game.move({
+      from: source,
+      to: target,
+      promotion: 'q' // always promote to a queen for simplicity
+  });
 
+  if (move === null) {
+      return 'snapback';
+  }
+}
+
+// update the board position after the piece snap 
+// for castling, en passant, pawn promotion, etc.
+function onSnapEnd() {
+  board.position(game.fen());
+}
+
+// configure the board event handlers
+board.on('dragStart', onDragStart);
+board.on('drop', onDrop);
+board.on('snapEnd', onSnapEnd);
+
+// set the initial board position
+board.position(game.fen());
 
 
 
