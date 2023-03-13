@@ -1,9 +1,9 @@
 
 var board = null
 var game = new Chess()
-var $status = ('status')
-var $fen = ('fen')
-var $pgn = ('pgn')
+var status = ('status')
+var fen = ('fen')
+var pgn = ('pgn')
 
 function onDragStart (source, piece, position, orientation) {
   // do not pick up pieces if the game is over

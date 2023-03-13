@@ -57,12 +57,12 @@ h1:hover{
     color: blueviolet;
 }
 
-.library-nav{
+.play-nav{
   text-align: center;
   
 
 }
-.library-nav button{
+.play-nav button{
   padding: 10px 10px;
   font-size: x-large; 
   border-radius: 10px;
@@ -71,7 +71,7 @@ h1:hover{
   background-color: rgb(170, 243, 245);
   font-family: cursive;
 }
-.library-nav button:active{
+.play-nav button:active{
     transform: translateY(2px);
     box-shadow: 1px 1px 1px rgb(103, 102, 102);
 }
