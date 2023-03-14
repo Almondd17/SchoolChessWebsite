@@ -5,33 +5,62 @@ function showInf(){
   document.getElementById('contact-info').style.display = "block";
 }
 
-let options = [
-  'play chess 1v1',
-  'website Information',
-  'game rules',
-  'contact us',
-  'settings',
-  'register',
-  'online chess',
+const searchInput = document.querySelector("#search-item");
+const resultsBox = document.querySelector(".results-box");
+const resultsList = document.querySelector(".results-box ul");
+
+// List of sample search results
+const searchResults = [
+"Chess board",
+"Chess pieces",
+"Chess game",
+"Chess tournament",
+"Chess rules",
+"Chess openings",
+"Chess strategies",
 ];
 
-const resultsBox = document.querySelector(".results-box");
-const inputBox = document.getElementById("search-item");
+// Function to display search results
+function showResults(results) {
+// Clear previous search results
+resultsList.innerHTML = "";
 
-inputBox.onkeyup = function(){
-  let result = [];
-  let input = inputBox.value;
-  if(input.length){
-    result = options.filter((keyword)=>{
-    return keyword.toLowerCase().includes(input.toLowerCase()); 
-    });
+// Create and append new list items for each result
+results.forEach((result) => {
+const li = document.createElement("li");
+li.textContent = result;
+resultsList.appendChild(li);
+});
+
+// Show the results box
+resultsBox.style.display = "block";
+}
+
+// Function to hide search results
+function hideResults() {
+resultsBox.style.display = "none";
+}
+
+// Event listener for search input field
+searchInput.addEventListener("input", () => {
+// Get the search keyword
+const keyword = searchInput.value.trim();
+
+// Check if keyword is not empty
+if (keyword) {
+// Filter search results based on keyword
+const filteredResults = searchResults.filter((result) =>
+result.toLowerCase().includes(keyword.toLowerCase())
+);
+} else {
+  // Hide search results if keyword is empty
+  hideResults();
   }
-  display(result);
-}
-
-function display(result){
-  const content = result.map((list)=>{
-    return "<li>"+list+"</li>";
   });
-  resultsBox.innerHTML = "<ul>"+ content.join('') +"</ul>"
-}
+  
+  // Event listener for clicking outside the results box
+  document.addEventListener("click", (event) => {
+  if (!resultsBox.contains(event.target)) {
+  hideResults();
+  }
+  });

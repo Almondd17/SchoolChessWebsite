@@ -3,16 +3,17 @@ body{
 }
 
 ::-webkit-scrollbar{
-    width: 1.2em;
+    width: 1em;
 }
 
 ::-webkit-scrollbar-track{
-    background: hsl(189, 92%, 51%);
+    background-color: #F5F5F5;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(90deg, rgba(65, 65, 65, 0.139), rgba(81, 81, 81, 0.818), rgba(166, 166, 166, 0.852));
-    border-radius: 20px;
-    
+    border-radius: 5px;
+
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -27,10 +28,8 @@ h1 {
     text-shadow: 1px 1px 4px black;
     font-weight: 900;
     text-transform: uppercase;
-
-    
-    
 }
+
 h1:hover{
     cursor: default;
 }

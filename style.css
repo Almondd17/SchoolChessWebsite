@@ -193,9 +193,11 @@ h2{
         
 }
 
+.results-box{
+        display: none;
+}
 .results-box ul{
-        border-top: 1px solid #999;
-        padding: 20px 15px;
+        padding: 30px 20px;
 }
 
 .results-box ul li{
