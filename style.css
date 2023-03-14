@@ -147,7 +147,7 @@ h2{
 .container1{
        
         background: white; 
-        width: 375px;
+        width: 405px;
         height: 540px;
         border-radius: 10px;
         box-shadow: black ;
@@ -175,12 +175,11 @@ h2{
         font-weight: 500;
         font-family: cursive;
         padding: 8px 10px;
-
 }
 
 
 
-.container1 button {
+.container1 button{
         
         width: 30px;
         height: 30px;
@@ -194,7 +193,21 @@ h2{
         
 }
 
+.results-box ul{
+        border-top: 1px solid #999;
+        padding: 20px 15px;
+}
 
+.results-box ul li{
+        list-style: none;
+        border-radius: 7px;
+        padding: 20px 15px;
+        cursor: pointer;
+}
+
+.results-box ul li:hover{
+        background:rgb(225, 226, 226);
+}
 
 @keyframes animation1 {
         

@@ -2,7 +2,22 @@ body{
     background: linear-gradient(90deg, rgb(0, 255, 119), rgb(0, 255, 225),rgb(0, 119, 255));
 }
 
+::-webkit-scrollbar{
+    width: 1.2em;
+}
 
+::-webkit-scrollbar-track{
+    background: hsl(189, 92%, 51%);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, rgba(65, 65, 65, 0.139), rgba(81, 81, 81, 0.818), rgba(166, 166, 166, 0.852));
+    border-radius: 20px;
+    
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.139), rgba(0, 0, 0, 0.818), rgba(151, 151, 151, 0.852));
+}
 
 h1 {
     color:white;
