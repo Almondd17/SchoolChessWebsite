@@ -1,0 +1,99 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(95deg, #e4e3e3,#fff,#b1b1b1);
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+    font-family: Georgia;
+
+}
+
+main{
+    padding: 20px;
+}
+
+p{
+    font-family: Arial;
+    line-height: 2.5;
+    color: brown;
+    font-weight: bold;
+}
+section{
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-top: 0;
+    font-family: cursive;
+}
+
+h3{
+    font-family: initial;
+    font-size: x-large;
+    padding: 10px 10px;
+    
+}
+ul{
+    margin: 0;
+    padding-left: 20px;
+    list-style: none;
+    padding-top: 10px;
+}
+
+img{
+    max-width: 50%;
+}
+
+.rules{
+    text-align: center;
+    line-height: 2;
+}
+
+.movement-examples{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.movement-examples div{
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.movement-examples img{
+    margin-bottom: 10px;
+    max-height: 150px;
+}
+
+.movement-examples p{
+    margin: 0;
+    font-size: 14px;
+}
+.material h3{
+    text-align: center;
+}
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-track{
+    background: rgb(151, 151, 151);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background:white;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(217, 216, 216);
+}
