@@ -20,11 +20,11 @@ body{
 #sidebar{
         
         position: absolute;
-        width: 280px;
+        width: 250px;
         height: 100%;
-        background: linear-gradient(90deg, black, rgb(0, 255, 213));
-        left: -280px;
-        transition: 1.5s;
+        background: linear-gradient(90deg, rgb(12, 255, 243), rgb(73, 106, 100));
+        left: -250px;
+        transition: 1.3s;
         
 }
 #sidebar.active{
@@ -39,7 +39,8 @@ body{
         font-family: monospace;
         line-height: 90px;
         letter-spacing: 1.5px;
-        margin-left: 15px;
+        margin-left: 50px;
+        -webkit-text-stroke: black;
 
 }
 
@@ -48,10 +49,12 @@ body{
         text-decoration: none;
         transition: 0.3s;
         cursor: pointer;
+        
 }
 
 #sidebar a:hover{
-        background: grey;
+        background: rgb(195, 195, 195);
+        opacity: 0.5;
         padding: 10px 10px;
 }
 
@@ -65,16 +68,19 @@ body{
         cursor: pointer;
 }
 
-#contact-info{
-        color: white;
-        display: none;
-        margin-top: 40%;
-        font-family: Arial;
-        text-align: center;
-        font-weight: lighter;
-        
+#sidebar button{
+        padding: 20px 20px;
+        margin-left: 10%;
+        margin-top: 190%;
+        background: url(images/settings-.png);
+        border-radius: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s all;
 }
-
 
 .toggle-btn span{
 

@@ -1,9 +1,6 @@
 function showBar(){
   document.getElementById('sidebar').classList.toggle('active')
 }
-function showInf(){
-  document.getElementById('contact-info').style.display = "block";
-}
 
 const searchInput = document.getElementById("search-item");
 const resultsBox = document.querySelector(".results-box");
