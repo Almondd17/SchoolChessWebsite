@@ -1,49 +1,86 @@
-var board = Chessboard('board', {
-  draggable: true,
-  dropOffBoard: 'trash',
-  sparePieces: true,
-  pieceTheme: 'images/chess-pieces/{piece}.png'
-});
+var board = null 
+var game = new Chess()
+var whiteSquareGrey = '#a9a9a9'
+var blackSquareGrey = '#696969'
 
-var game = new Chess();
-var legalMoves = game.moves({ verbose: true }).map(function(move) {
-  return Chessboard.objToFen(move.from) + '-' + Chessboard.objToFen(move.to);
-});
+function removeGreySquares () {
+  $('#myBoard.square-55d63').css('background', '')
+}
 
-function onDragStart(source, piece, position, orientation) {
-  // only allow piece movement if it's a legal move
-  if (legalMoves.indexOf(source + '-' + position) === -1) {
-      return false;
+function greySquare (square) {
+  var $square = $('#myBoard.square-' + square)
+
+  var background = whiteSquareGrey
+  if ($square.hasClass('black-3c85d')) {
+    background = blackSquareGrey
+  }
+
+  $square.css('background', background)
+}
+
+function onDragStart (source, piece) {
+  // do not pick up pieces if the game is over
+  if (game.game_over()) return false
+
+  // or if it's not that side's turn
+  if ((game.turn() === 'w' && piece.search(/^b/) !== -1) ||
+      (game.turn() === 'b' && piece.search(/^w/) !== -1)) {
+    return false
   }
 }
 
-function onDrop(source, target, piece, newPos, oldPos, orientation) {
-  // only make the move if it's a legal move
+function onDrop (source, target) {
+  removeGreySquares()
+
+  // see if the move is legal
   var move = game.move({
-      from: source,
-      to: target,
-      promotion: 'q' // always promote to a queen for simplicity
-  });
+    from: source,
+    to: target,
+    promotion: 'q' // NOTE: always promote to a queen for example simplicity
+  })
 
-  if (move === null) {
-      return 'snapback';
+  // illegal move
+  if (move === null) return 'snapback'
+}
+
+function onMouseoverSquare (square, piece) {
+  // get list of possible moves for this square
+  var moves = game.moves({
+    square: square,
+    verbose: true
+  })
+
+  // exit if there are no moves available for this square
+  if (moves.length === 0) return
+
+  // highlight the square they moused over
+  greySquare(square)
+
+  // highlight the possible squares for this piece
+  for (var i = 0; i < moves.length; i++) {
+    greySquare(moves[i].to)
   }
 }
 
-// update the board position after the piece snap 
-// for castling, en passant, pawn promotion, etc.
-function onSnapEnd() {
-  board.position(game.fen());
+function onMouseoutSquare (square, piece) {
+  removeGreySquares()
 }
 
-// configure the board event handlers
-board.on('dragStart', onDragStart);
-board.on('drop', onDrop);
-board.on('snapEnd', onSnapEnd);
+function onSnapEnd () {
+  board.position(game.fen())
+}
 
-// set the initial board position
-board.position(game.fen());
-
+var config = {
+  draggable: true,
+  position: 'start',
+  onDragStart: onDragStart,
+  onDrop: onDrop,
+  onMouseoutSquare: onMouseoutSquare,
+  onMouseoverSquare: onMouseoverSquare,
+  onSnapEnd: onSnapEnd,
+  pieceTheme: '/images/chess-pieces/{piece}.jpg'
+}
+board = Chessboard('myBoard', config)
 
 
 

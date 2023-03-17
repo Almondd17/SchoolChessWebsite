@@ -46,6 +46,13 @@ body{
 #sidebar a{
         color: white;
         text-decoration: none;
+        transition: 0.3s;
+        cursor: pointer;
+}
+
+#sidebar a:hover{
+        background: grey;
+        padding: 10px 10px;
 }
 
 #sidebar .toggle-btn{
@@ -200,7 +207,7 @@ h2{
         padding: 30px 20px;
 }
 
-.results-box ul li{
+.results-box ul li a{
         list-style: none;
         border-radius: 7px;
         padding: 20px 15px;

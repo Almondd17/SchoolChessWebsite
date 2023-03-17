@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(90deg, rgba(255, 19, 19, 0.998), rgb(255, 105, 71), gold);
+    background: linear-gradient(90deg, rgba(243, 84, 84, 0.998), rgb(255, 105, 71), gold);
 }
 
 
@@ -7,30 +7,13 @@ body{
 
 
 
-h1{
+#title{
     text-align: center;
     font-family: Arial;
-    font-size: xx-large;
     font-weight: bold;
     text-transform: capitalize;
     background: linear-gradient(95deg, rgb(255, 168, 8), rgb(255, 255, 4));
     -webkit-background-clip: text;
     color: transparent;
-    
-}
-h2{
-    text-align: center;
-    font-size: x-large;
-    font-family: cursive;
-    background: linear-gradient(95deg, orange, yellow);
-    -webkit-background-clip: text;
-    color: transparent;
-    
-
-
-}
-
-.content-table table{
-    font-size: xx-large;
     
 }
