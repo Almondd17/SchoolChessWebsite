@@ -81,12 +81,22 @@ label{
     
 }
 
-#button{
-  font-size: xx-large;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline black;
+.home-btn button{
+  padding: 10px 15px;
+  font-size: larger;
+  background: linear-gradient(90deg, #0000, #2199);
+  border: black 1px solid;
+  border-radius: 5px;
+}
 
+.home-btn button:hover{
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.home-btn button:active{
+  cursor: progress;
+  box-shadow: 0px 0px 10px 0px lightblue;
 }
 
 #button:active{

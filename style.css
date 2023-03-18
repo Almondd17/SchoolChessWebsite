@@ -22,7 +22,7 @@ body{
         position: absolute;
         width: 250px;
         height: 100%;
-        background: linear-gradient(90deg, rgb(12, 255, 243), rgb(73, 106, 100));
+        background: linear-gradient(95deg, rgb(12, 255, 243), rgb(178, 232, 222), #00ebf7);
         left: -250px;
         transition: 1.3s;
         
@@ -34,12 +34,12 @@ body{
 #sidebar ul li{
         
         list-style: none;
-        font-weight: bold;
-        font-size: x-large;
+        font-weight: 900;
+        font-size: 23px;
         font-family: monospace;
-        line-height: 90px;
+        line-height: 100px;
         letter-spacing: 1.5px;
-        margin-left: 50px;
+        text-align: center;
         -webkit-text-stroke: black;
 
 }
@@ -54,6 +54,7 @@ body{
 
 #sidebar a:hover{
         background: rgb(195, 195, 195);
+        border-radius: 10px;
         opacity: 0.5;
         padding: 10px 10px;
 }
