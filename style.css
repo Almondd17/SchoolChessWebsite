@@ -18,13 +18,16 @@ body{
 }
 
 #sidebar{
-        
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.5);
         position: absolute;
         width: 250px;
-        height: 100%;
-        background: linear-gradient(95deg, rgb(12, 255, 243), rgb(178, 232, 222), #00ebf7);
-        left: -250px;
-        transition: 1.3s;
+        height: 70%;
+        background: linear-gradient(90deg, rgb(12, 170, 255), rgb(119, 243, 221));
+        left: -270px;
+        transition: 1.5s;
         
 }
 #sidebar.active{
@@ -45,7 +48,7 @@ body{
 }
 
 #sidebar a{
-        color: white;
+        color: #ffffff;
         text-decoration: none;
         transition: 0.3s;
         cursor: pointer;
@@ -53,9 +56,9 @@ body{
 }
 
 #sidebar a:hover{
-        background: rgb(195, 195, 195);
+        background: rgb(188, 188, 188);
         border-radius: 10px;
-        opacity: 0.5;
+        opacity: 0.8;
         padding: 10px 10px;
 }
 
@@ -72,7 +75,7 @@ body{
 #sidebar button{
         padding: 20px 20px;
         margin-left: 10%;
-        margin-top: 190%;
+        margin-top: 70%;
         background: url(images/settings-.png);
         border-radius: 5px;
         background-position: center;
@@ -92,16 +95,6 @@ body{
         margin-top: 5px;
 
 
-}
-#contact-info{
-        color: white;
-        font-weight: bold;
-        font-family: Arial;
-        letter-spacing: 1px;
-        display: none;
-        font-size: smaller;
-        margin-top: 35%;
-        text-align: center;
 }
 
 #register:hover {
@@ -207,23 +200,6 @@ h2{
         
 }
 
-.results-box{
-        display: none;
-}
-.results-box ul{
-        padding: 30px 20px;
-}
-
-.results-box ul li a{
-        list-style: none;
-        border-radius: 7px;
-        padding: 20px 15px;
-        cursor: pointer;
-}
-
-.results-box ul li:hover{
-        background:rgb(225, 226, 226);
-}
 
 @keyframes animation1 {
         
