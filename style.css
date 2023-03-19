@@ -38,12 +38,11 @@ body{
         
         list-style: none;
         font-weight: 900;
-        font-size: 23px;
-        font-family: monospace;
-        line-height: 100px;
-        letter-spacing: 1.5px;
+        font-size: 20px;
+        font-family: 'Segoe UI';
+        line-height: 105px;
+        letter-spacing: 1px;
         text-align: center;
-        -webkit-text-stroke: black;
 
 }
 
@@ -74,10 +73,9 @@ body{
 
 #sidebar button{
         padding: 20px 20px;
-        margin-left: 10%;
-        margin-top: 70%;
+        margin-left: 5%;
+        margin-top: 32.5%;
         background: url(images/settings-.png);
-        border-radius: 5px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -200,6 +198,28 @@ h2{
         
 }
 
+.results-box {
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        max-height: 200px;
+        overflow-y: auto;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        z-index: 1;
+      }
+      
+      .results-box li {
+        list-style: none;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+      }
+      
+      .results-box li:hover {
+        background-color: #f9f9f9;
+      }
 
 @keyframes animation1 {
         

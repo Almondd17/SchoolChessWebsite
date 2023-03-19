@@ -2,62 +2,31 @@ function showBar(){
   document.getElementById('sidebar').classList.toggle('active')
 }
 
-const searchInput = document.getElementById("search-item");
-const resultsBox = document.querySelector(".results-box");
-const resultsList = document.querySelector(".results-box ul");
+const searchItem = document.querySelector('#search-item');
+const resultsBox = document.querySelector('.results-box');
 
-// List of sample search results
-const searchResults = [
-"Chess board",
-"Chess pieces",
-"Chess game",
-"Chess tournament",
-"Chess rules",
-"Chess openings",
-"Chess strategies",
-];
-
-// Function to display search results
-function showResults(results) {
-// Clear previous search results
-resultsList.innerHTML = "";
-
-// Create and append new list items for each result
-results.forEach((result) => {
-const li = document.createElement("li");
-li.textContent = result;
-resultsList.appendChild(li);
+searchItem.addEventListener('keyup', function() {
+  showResults(searchItem.value);
 });
 
-// Show the results box
-resultsBox.style.display = "block";
-}
-
-// Function to hide search results
-function hideResults() {
-resultsBox.style.display = "none";
-}
-
-// Event listener for search input field
-searchInput.addEventListener("input", () => {
-// Get the search keyword
-const keyword = searchInput.value.trim();
-
-// Check if keyword is not empty
-if (keyword) {
-// Filter search results based on keyword
-const filteredResults = searchResults.filter((result) =>
-result.toLowerCase().includes(keyword.toLowerCase())
-);
-} else {
-  // Hide search results if keyword is empty
-  hideResults();
+function showResults(searchText) {
+  if (searchText.length === 0) {
+    resultsBox.style.display = 'none';
+    return;
   }
+
+  const results = ['Result 1', 'Result 2', 'Result 3']; // Replace with your search results
+
+  resultsBox.innerHTML = '';
+  results.forEach(function(result) {
+    const li = document.createElement('li');
+    li.innerText = result;
+    li.addEventListener('click', function() {
+      searchItem.value = result;
+      resultsBox.style.display = 'none';
+    });
+    resultsBox.appendChild(li);
   });
-  
-  // Event listener for clicking outside the results box
-  document.addEventListener("click", (event) => {
-  if (!resultsBox.contains(event.target)) {
-  hideResults();
-  }
-  });
+
+  resultsBox.style.display = 'block';
+}
