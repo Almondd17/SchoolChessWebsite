@@ -1,3 +1,6 @@
 {
-    "sqltools.connections": []
+    "sqltools.connections": [],
+    "[css]":{
+        "editor.suggest.insertMode": "replace"
+    }
 }

@@ -49,16 +49,18 @@ body{
 #sidebar a{
         color: #ffffff;
         text-decoration: none;
-        transition: 0.3s;
+        transition: 0.5s;
         cursor: pointer;
-        
+        padding: 15px 10px;
 }
 
 #sidebar a:hover{
-        background: rgb(188, 188, 188);
-        border-radius: 10px;
-        opacity: 0.8;
-        padding: 10px 10px;
+        background-color: rgba(167, 167, 167, 0.8);
+        border-radius: 13px;
+}
+
+#sidebar a:active{
+        cursor: progress;
 }
 
 #sidebar .toggle-btn{
@@ -72,9 +74,9 @@ body{
 }
 
 #sidebar button{
-        padding: 20px 20px;
+        padding: 25px 25px 25px;
         margin-left: 5%;
-        margin-top: 32.5%;
+        margin-top: 27.5%;
         background: url(images/settings-.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -82,6 +84,15 @@ body{
         border: none;
         cursor: pointer;
         transition: 0.2s all;
+}
+
+#sidebar button:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+}
+
+#sidebar button:active{
+        cursor: progress;
 }
 
 .toggle-btn span{
@@ -115,7 +126,7 @@ body{
         font-size: 23px;
         font-family: cursive;
         float: right;
-        padding: 5px;
+        padding: 0px 10px 0px 10px;
         margin: 15px;
         box-shadow: 0px 10px 0px 0px lightblue;
         height: 43px;
