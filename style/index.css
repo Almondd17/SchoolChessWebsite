@@ -167,7 +167,7 @@ h2{
         right: 0;
         background: lavenderblush; 
         width: 400px;
-        height: 450px;
+        height: 500px;
         border-radius: 15px;
         box-shadow: black ;
         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
@@ -195,32 +195,42 @@ h2{
         padding: 8px 10px;
         background: rgba(202, 202, 202, 0.4);
 }
-
-.results-box {
-        display: none;
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        max-height: 200px;
-        overflow-y: auto;
-        background-color: #fff;
-        border: 2px solid #ccc;
-        z-index: 1;
+.container1 .results-box{
+        margin: 20px;
+        overflow-y: scroll;
+        max-height: 350px;
 }
-
-.results-box li {
-        list-style: none;
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
+::-webkit-scrollbar{
+        width: 1em;
+    }
+    ::-webkit-scrollbar-track{
+        background: lavenderblush;
+    }
+    ::-webkit-scrollbar-thumb{
+        background:rgb(177, 177, 177);
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background: rgb(124, 124, 124);
+    }
+  
+.results-box .result{
+        line-height: 2.5;
+        font-size: larger;
+        border-radius: 15px;
+        padding: .5rem;
+        margin-top: 40px;
         cursor: pointer;
 }
-
-.results-box li:hover {
-        background-color: #f9f9f9;
+.result a{
+        text-decoration: none;
+        color: black;
+        font-family: Verdana;
 }
-
-@keyframes animation1 {
-        
+.results-box .result:hover{
+        background: rgba(221, 220, 220, 0.633);
+}
+.hide {
+        display: none;
 }
 
 

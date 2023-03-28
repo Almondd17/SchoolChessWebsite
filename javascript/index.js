@@ -1,24 +1,39 @@
 function showBar(){
   document.getElementById('sidebar').classList.toggle('active');
 }
-let SearchInput = document.getElementById("search-item");
-let ResultsBox = document.getElementById("results-box");
-var results = [
-  'result1',
-  'result2',
-  'result3'
-];
+const searchInput = document.querySelector("#search-item");
+const resultsBox = document.querySelector(".results-box");
 
-results.forEach(addResults);
+searchInput.addEventListener("input", () => {
+  const searchQuery = searchInput.value.toLowerCase().trim();
+  const results = searchResults(searchQuery);
+  displayResults(results);
+});
 
-function addResults(){
-  const ResultList = ResultsBox.appendChild.document.createElement("ul");
-  ResultList.appendChild.document.createElement("li");
-  const listItem = document.getElementsByTagName("li") = results[indexedDB];
+function searchResults(query) {
+  // Replace this with your own search logic.
+  const allResults = Array.from(document.querySelectorAll(".result"));
+  return allResults.filter((result) =>
+    result.querySelector(".body").textContent.toLowerCase().includes(query)
+  );
 }
 
-function showResults(){
-  SearchInput.onkeyup(listItem.style.display = 'block')
+
+function displayResults(results) {
+  // Clear previous results.
+  resultsBox.innerHTML = "";
+
+  if (results.length > 0) {
+    // Display new results.
+    results.forEach((result) => {
+      resultsBox.appendChild(result);
+    });
+  } else {
+    // Display "No results found" message.
+    const noResults = document.createElement("div");
+    noResults.textContent = "No results found.";
+    resultsBox.appendChild(noResults);
+  }
 }
-   
+
  
