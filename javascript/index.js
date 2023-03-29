@@ -1,6 +1,8 @@
 function showBar(){
   document.getElementById('sidebar').classList.toggle('active');
 }
+
+
 const searchInput = document.querySelector("#search-item");
 const resultsBox = document.querySelector(".results-box");
 
@@ -11,7 +13,6 @@ searchInput.addEventListener("input", () => {
 });
 
 function searchResults(query) {
-  // Replace this with your own search logic.
   const allResults = Array.from(document.querySelectorAll(".result"));
   return allResults.filter((result) =>
     result.querySelector(".body").textContent.toLowerCase().includes(query)
@@ -20,18 +21,21 @@ function searchResults(query) {
 
 
 function displayResults(results) {
-  // Clear previous results.
+  // Clear the previous results
   resultsBox.innerHTML = "";
 
   if (results.length > 0) {
-    // Display new results.
+    // Display new results
     results.forEach((result) => {
       resultsBox.appendChild(result);
     });
-  } else {
-    // Display "No results found" message.
+  }
+  else {
+    // Display "No results found" message
     const noResults = document.createElement("div");
-    noResults.textContent = "No results found.";
+    noResults.style.fontSize = "large";
+    noResults.style.fontFamily = "cursive";
+    noResults.textContent = "No results were found";
     resultsBox.appendChild(noResults);
   }
 }
