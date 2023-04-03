@@ -19,14 +19,14 @@ body{
 
 #sidebar{
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 15px;
         border-radius: 20px;
         box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.5);
         position: absolute;
-        width: 250px;
-        height: 70%;
+        width: 220px;
+        height: 80%;
         background: linear-gradient(90deg, rgb(12, 170, 255), rgb(119, 243, 221));
-        left: -270px;
+        left: -240px;
         transition: 1.5s;
         
 }
@@ -40,7 +40,7 @@ body{
         font-weight: 900;
         font-size: 20px;
         font-family: 'Segoe UI';
-        line-height: 105px;
+        line-height: 90px;
         letter-spacing: 1px;
         text-align: center;
 
@@ -66,7 +66,7 @@ body{
 #sidebar .toggle-btn{
         position: absolute;
         top: 30px;
-        left: 300px;
+        left: 250px;
 }
 
 #sidebar .toggle-btn:hover{
@@ -75,8 +75,8 @@ body{
 
 #sidebar button{
         padding: 23px 23px 23px;
+        margin-top: 10%;
         margin-left: 5%;
-        margin-top: 27.5%;
         background: url(../images/settings-.png);
         background-position: center;
         background-repeat: no-repeat;
