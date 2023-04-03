@@ -1,0 +1,65 @@
+body{
+    background: linear-gradient(
+        95deg,
+        green,
+        yellow
+    );
+}
+
+.settings-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-family: serif;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e0e0e0;
+  }
+  
+  input[type="checkbox"] {
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    font-family: cursive;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
