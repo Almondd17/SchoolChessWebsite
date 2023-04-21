@@ -24,7 +24,7 @@ body{
         box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.5);
         position: absolute;
         width: 220px;
-        height: 80%;
+        height: 70%;
         background: linear-gradient(90deg, rgb(12, 170, 255), rgb(119, 243, 221));
         left: -240px;
         transition: 1.5s;
