@@ -1,6 +1,6 @@
 const API_TOKEN = 'lip_l9Ddpmq0nGAFxFwkNVNV'
 
-fetch('https://lichess.org/api/challenge/open', {
+fetch('https://lichess.org/api/challenge/Almond171', {
   method: 'POST',
   headers: {
     Authorization: `Bearer ${API_TOKEN}`,
@@ -16,8 +16,10 @@ fetch('https://lichess.org/api/challenge/open', {
     rated: true
   })
 })
-  .then(response => response.json())
-  .then(data => {
+  .then(response => {
+    console.log(response);
+    return response.json()
+  }).then(data => {
     console.log(data);
   })
   .catch(error => {

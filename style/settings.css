@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(
-        95deg,
+        90deg,
         green,
         yellow
     );
@@ -15,15 +15,17 @@ body{
     box-shadow: rgba(0, 0, 0, 0.5);
   }
   
-  h2 {
+  h1 {
     text-align: center;
     margin-bottom: 20px;
     font-family: Arial;
   }
   
-  h3 {
+  h2 {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: Arial;
+    text-decoration: underline 1px ;
   }
   
   form {
@@ -34,6 +36,9 @@ body{
   label {
     margin-bottom: 10px;
     font-family: serif;
+    font-size: larger;
+    padding: 10px;
+    font-family: 'Lucida Sans';
   }
   
   input[type="text"],
@@ -45,11 +50,11 @@ body{
     border: none;
     background-color: #e0e0e0;
   }
-  
+
   input[type="checkbox"] {
     margin-bottom: 20px;
   }
-  
+
   button[type="submit"] {
     padding: 10px;
     border-radius: 5px;
