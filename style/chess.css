@@ -1,19 +1,108 @@
 body{
-    background: linear-gradient(90deg, rgba(243, 84, 84, 0.998), rgb(255, 105, 71), gold);
+    background: linear-gradient(90deg, rgba(243, 84, 84, 0.9), rgba(255, 105, 71, 0.8), gold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
-
-
-
 
 #title{
     text-align: center;
     font-family: Arial;
     font-weight: bold;
     text-transform: capitalize;
-    background: linear-gradient(95deg, rgb(255, 168, 8), rgb(255, 255, 4));
-    -webkit-background-clip: text;
-    color: transparent;
-    
+    color: rgb(255, 240, 25);
+}
+
+
+#main-container {
+    width: 90%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin: auto;
+}
+
+#pgn-textarea {
+    height: 100px;
+    width: 90%;
+}
+
+#commands {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.commands__button {
+    margin: 2px;
+    background-color: white;
+    border: 1px solid slategrey;
+    color: slategrey;
+    padding: 4px;
+    font-size: 1.2em;
+    min-width: 40px;
+    cursor: pointer;
+}
+
+.commands__button:hover {
+    background-color: slategrey;
+    color: white;
+}
+
+#chessboard {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#errorSpan {
+    color: red;
+    padding: 4px;
+}
+
+#moves-div {
+    display: inline-block;
+    vertical-align: top;
+    max-height: 360px;
+    max-width: 180px;
+    overflow: auto;
+    margin: 0 4px;
+    color: black;
+    line-height: 1em;
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.move-number-span {
+    display: inline-block;
+    vertical-align: top;
+    width: 18%;
+    border-bottom: 1px gainsboro solid;
+    border-right: 1px gainsboro solid;
+    padding: 4px 0;
+    text-align: left;
+}
+
+.move-span {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    border-bottom: 1px gainsboro solid;
+    border-right: 1px gainsboro solid;
+    padding: 4px 0;
+    text-align: center;
+}
+
+#move-span_selected {
+    background-color: palegreen;
+}
+
+.move-span:hover {
+    background-color: gainsboro;
 }
