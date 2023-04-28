@@ -1,6 +1,5 @@
 {
-    "sqltools.connections": [],
-    "[css]":{
-        "editor.suggest.insertMode": "replace"
-    }
+    "files.associations": {
+        "*.jsp": "jsp"
+    }    
 }
