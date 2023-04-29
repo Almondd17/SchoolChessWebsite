@@ -5,15 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style/chess.css">
-        <link rel="stylesheet" href="../node_modules/abchess/AbChess-0.3.0.css">
+        <link rel="stylesheet" href="../chessboard/AbChess-0.3.0.css">
     </head>
 
     <body>
-        <div class="topbar"><a href="../index.html" onclick="alert('Are you sure you want to go back?')"><button id="homeB">Home</button></a></div>
-        <div id="title">
-            <h1>1v1 Chess</h1>
-            <h2>you are welcome to challenge anyone you'd like!</h2>
+        <div class="topbar">
+            
+            <a href="../index.html" onclick="alert('Are you sure you want to go back?')"><button id="homeB">Home</button></a>
+            <div id="title">
+                <h1>1v1 Chess</h1>
+                <h2>You are welcome to check out our Chess <a href="../pages/gameinfo.html"> information page</a>!</h2>
+            </div>
+        
         </div>
+       
         
         <div id='main-container'>
             <p id="notification" style="font-size: large; font-family: Arial;">challenge your friends!</p>
@@ -22,7 +27,7 @@
         </div>
             
                   
-            <script src="../node_modules/abchess/AbChess-0.3.0.js"></script>
+            <script src="../chessboard/AbChess-0.3.0.js"></script>
             <script src="../javascript/chessPage.js"></script>
     </body>
 

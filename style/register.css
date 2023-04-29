@@ -80,11 +80,14 @@ label{
     width: 20%;
     
 }
+.home-btn{
+    padding: 10px;
+}
 
 .home-btn button{
   padding: 10px 15px;
   font-size: larger;
-  background: linear-gradient(90deg, #0000, #2199);
+  background: linear-gradient(90deg, rgb(255, 255, 255), rgba(155, 212, 240, 0.962));
   border: black 1px solid;
   border-radius: 5px;
 }

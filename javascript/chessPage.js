@@ -2,7 +2,7 @@ var abChess = {};
 var options = {
     imagesPath: "../images/chess-pieces/",
     animated: false,
-    width: 500,
+    width: 700,
     markLastMove: false,
     animationSpeed: 5,
 

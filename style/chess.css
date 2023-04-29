@@ -7,7 +7,9 @@ body{
     font-family: Arial;
     font-weight: bold;
     text-transform: capitalize;
-    color: rgb(255, 240, 25);
+    color: rgb(0, 0, 0);
+    margin: auto;
+    float: right;
 }
 
 #homeB {
@@ -28,8 +30,6 @@ body{
 }
 
 .topbar {
-    display: grid;
-    grid-template-columns: min-content;
     margin: 25px 25px;
 }
 
@@ -37,6 +37,7 @@ body{
     width: 90%;
     text-align: center;
     margin: auto;
+
 }
 
 .inline-block {
