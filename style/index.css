@@ -24,7 +24,7 @@ body{
         box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.5);
         position: absolute;
         width: 220px;
-        height: 70%;
+        height: 55%;
         background: linear-gradient(90deg, rgb(12, 170, 255), rgb(119, 243, 221));
         left: -240px;
         transition: 1.5s;
@@ -48,6 +48,7 @@ body{
 
 #sidebar a{
         color: #ffffff;
+        text-shadow: rgb(0, 0, 0) 1px 0 4px;
         text-decoration: none;
         transition: 0.5s;
         cursor: pointer;
@@ -55,7 +56,7 @@ body{
 }
 
 #sidebar a:hover{
-        background-color: rgba(167, 167, 167, 0.8);
+        background-color: rgba(255, 255, 255, 0.359);
         border-radius: 13px;
 }
 
@@ -73,10 +74,16 @@ body{
         cursor: pointer;
 }
 
-#sidebar button{
+#settings-btn{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5px;
+}
+
+#settings-btn button{
+        
         padding: 23px 23px 23px;
-        margin-top: 10%;
-        margin-left: 5%;
         background: url(../images/settings-.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -86,7 +93,7 @@ body{
         transition: 0.2s all;
 }
 
-#sidebar button:hover{
+#settings-btn button:hover{
         background-color: rgba(255, 255, 255, 0.2);
         border-radius: 10px;
 }

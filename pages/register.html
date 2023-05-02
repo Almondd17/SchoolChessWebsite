@@ -14,52 +14,53 @@
 
           <a class="home-btn" href="../index.html"><button>Home</button></a>
 
-            <form method="post" action="" id="register_form" runat="server">
+            <div class="form-container">
+                <form method="post" action="" id="register_form" runat="server">
 
-                        <div>
-                           <h1>Create an account</h1> 
-                        </div>
-                        
-                    <div class="inputs">
-
-                                <label for="">Username:</label>
-                                <br>
-                                <input type="name" name="identifier" placeholder="OrinTheQueen">
-                                <p id="username-error"></p>
-
-                                
-                                <label for="">Email adress:</label>
-                                <br>
-                                <input type="email" name="email" placeholder="orin.mano@gmail.com">
-                                <p id="email-error"></p>
-                                
-                                <label for="">Password:</label>
-                                <br>
-                                <input type="password" name="password" id="password" placeholder="orin123">
-                                
-
-                                <br>
-                                <label for="age" id="ageDisplay">Select your age: </label>
-                                <input type="range" name="" id="ageInput" min="16" max="99" value="0" oninput="showAge(this.value)">
-                                <br>
-                                <label for="comment" style="color: red; font-size: smaller;">*You must be over 15 to register our website</label>
-                                   
-
-                    </div>
-
-                        <input type="submit" value="Submit" id="submit" onsubmit="">
-
-                    
-            
+                            <div>
+                            <h1>Create an account</h1> 
+                            </div>
                             
+                        <div class="inputs">
+
+                                    <label for="">Username:</label>
+                                    <br>
+                                    <input type="name" name="identifier" placeholder="OrinTheQueen">
+                                    <p id="username-error"></p>
+
+                                    
+                                    <label for="">Email adress:</label>
+                                    <br>
+                                    <input type="email" name="email" placeholder="orin.mano@gmail.com">
+                                    <p id="email-error"></p>
+                                    
+                                    <label for="">Password:</label>
+                                    <br>
+                                    <input type="password" name="password" id="password" placeholder="orin123">
+                                    
+
+                                    <br>
+                                    <label for="age" id="ageDisplay">Select your age: </label>
+                                    <input type="range" name="" id="ageInput" min="16" max="99" value="0" oninput="showAge(this.value)">
+                                    <br>
+                                    <label for="comment" style="color: red; font-size: smaller;">*You must be over 15 to register our website</label>
+                                    
+
+                        </div>
+
+                            <input type="submit" value="Submit" id="submit" onsubmit="">
+
                         
-                        
-                   
+                
+                                
+                            
+                            
+                    
 
-                <p id="log_in">Do you have an account already? <a href="login.html" id="login">log in</a></p>
+                    <p id="log_in">Do you have an account already? <a href="/pages/login.html" id="login">log in</a></p>
 
-            </form>
-
+                </form>
+            </div>
         </body>
 
     </html>

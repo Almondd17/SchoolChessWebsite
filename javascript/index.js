@@ -39,5 +39,3 @@ function displayResults(results) {
     resultsBox.appendChild(noResults);
   }
 }
-
- 

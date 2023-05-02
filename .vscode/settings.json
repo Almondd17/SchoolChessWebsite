@@ -1,7 +1,23 @@
 {
     "files.associations": {
         "*.jsp": "jsp"
-    }    
+    },
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "shakedDB",
+            "password": "157521",
+            "database": "firstConnection",
+            "username": "almond"
+        }
+    ]
 
-    
 }
+   
+  
