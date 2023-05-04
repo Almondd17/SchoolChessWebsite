@@ -236,18 +236,22 @@ h2{
 .results-box .result{
         line-height: 2.5;
         font-size: larger;
-        border-radius: 15px;
         padding: .5rem;
-        margin-top: 40px;
+        margin-top: 20px;
         cursor: pointer;
 }
 .result a{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
         text-decoration: none;
         color: black;
         font-family: Verdana;
+        border-radius: 15px;
 }
-.results-box .result:hover{
-        background: rgba(221, 220, 220, 0.633);
+.results-box .result a:hover{
+        background: rgba(155, 155, 155, 0.29);
+        transition: 0.8s;
 }
 .hide {
         display: none;
