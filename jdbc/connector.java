@@ -1,7 +1,7 @@
 package jdbc;
 import java.sql.*;
 public class connector{
-    static final String DB_URL = "jdbc:mysql://localhost:3306/sys";
+    static final String DB_URL = "jdbc:mysql://localhost:3306/mydatabase";
     static final String USER = "root";
     static final String Pass = "157521";
 

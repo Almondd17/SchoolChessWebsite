@@ -25,7 +25,7 @@
 }
 
 .square_black {
-    background: rgba(149, 87, 53, 0.591);
+    background: rgba(0, 139, 16, 0.658);
 }
 
 .square__canvas {
@@ -70,11 +70,11 @@
 }
 
 .square_overflown {
-    background-color: rgb(142, 191, 255);
+    background-color: rgba(0, 255, 149, 0.813);
 }
 
 .square_selected {
-    background: rgba(0, 191, 255, 0.483);
+    background: rgba(6, 255, 118, 0.722);
 }
 
 .columns-border {
@@ -118,10 +118,9 @@
 
 .promotion-div {
     z-index: 9;
-    top: 37.5%;
+    top: 42%;
     left: 0;
     position: absolute;
-    background-color: gainsboro;
     height: 25%;
     width: 100%;
     display: none;
@@ -130,11 +129,11 @@
 .promotion-button {
     display: inline-block;
     background-size: 100% 100%;
-    background-color: rgba(119, 136, 153, 0.363);
+    background-color: rgb(119, 136, 153);
     border: none;
     margin: 0;
-    height: 100%;
-    width: 20%;
+    height: 60%;
+    width: 15%;
 }
 
 .promotion-button:hover {

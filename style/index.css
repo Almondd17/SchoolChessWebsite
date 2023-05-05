@@ -161,8 +161,7 @@ h2{
         color: gold;
         font-family: monospace;
         cursor: default; 
-        padding: 20px 20px;
-
+        padding: 20px 20px 40px;
 }
 
         
@@ -202,6 +201,7 @@ h2{
         padding: 8px 10px;
         background: rgba(202, 202, 202, 0.4);
 }
+
 .container1 input::-webkit-search-cancel-button{        
         -webkit-appearance: none;
         height: 20px;

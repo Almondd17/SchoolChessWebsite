@@ -1,10 +1,10 @@
 var abChess = {};
 var options = {
     imagesPath: "../images/chess-pieces/",
-    animated: false,
-    width: 700,
+    AnimationEffect: true,
+    width: 750,
     markLastMove: false,
-    animationSpeed: 5,
+    animationSpeed: 20,
 
 };
 //create the board
@@ -21,6 +21,10 @@ function updateboard(){
     if (abChess.isCheck(movesCount)) {
         status = " is in check.";
     }
+    if (abChess.isCheckmate(movesCount) === true){
+        status = " got checkmated! :(";
+    }
+    
     notify.innerText = turn + status;
 }
 abChess.setFEN();
