@@ -1,6 +1,7 @@
 var abChess = {};
 var options = {
     imagesPath: "../images/chess-pieces/",
+    ImagesExtension: ".png",
     AnimationEffect: true,
     width: 750,
     markLastMove: false,
