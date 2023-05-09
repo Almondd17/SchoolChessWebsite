@@ -4,8 +4,8 @@ var options = {
     ImagesExtension: ".png",
     AnimationEffect: true,
     width: 750,
-    markLastMove: false,
-    animationSpeed: 20,
+    markLastMove: true,
+    animationSpeed: 25,
 
 };
 //create the board

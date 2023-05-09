@@ -2,21 +2,7 @@
     "files.associations": {
         "*.jsp": "jsp"
     },
-    "sqltools.connections": [
-        {
-            "mysqlOptions": {
-                "authProtocol": "default"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MySQL",
-            "name": "shakedDB",
-            "password": "157521",
-            "database": "firstConnection",
-            "username": "almond"
-        }
-    ],
+    
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "c://Program Files (x86)//MySQL//Connector J 8.0//mysql-connector-j-8.0.33.jar"

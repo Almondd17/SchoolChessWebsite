@@ -75,6 +75,7 @@ h1:hover{
 
 .container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +84,7 @@ h1:hover{
     margin: 20px;
     padding: 20px;
     border: 1px solid black;
-    width: 300px;
+    width: 400px;
     height: 520px;
     display: flex;
     flex-direction: column;
